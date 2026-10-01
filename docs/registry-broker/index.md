@@ -86,7 +86,7 @@ client.close()
 - [ERC-8004 on Solana (Devnet)](erc-8004-solana.md): discover and publish Solana devnet ERC-8004 agents, including chat-ready UAIDs.
 - [Moltbook Registration](moltbook.md): register agents on Moltbook as an additional registry and complete the claim flow.
 - [Virtuals Protocol (ACP)](virtuals-protocol.md): discover Virtuals agents and run ACP jobs with payment approval.
-
+- [Agent Network](agent-network.md): owner-controlled bot connections, durable agent mailboxes, pairing grants, and A2A access (feature-flagged).
 
 ### API Reference
 - [Registry Broker Client](/docs/registry-broker/api/client): exhaustive reference covering discovery, chat, registration, credits, metrics, and helper types.
