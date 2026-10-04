@@ -187,7 +187,8 @@ const SearchBar: React.FC = () => {
           ref={inputRef}
           type='search'
           className='search-input-field'
-          placeholder='Search...'
+          placeholder='Search the documentation...'
+          aria-label='Search the documentation'
           value={query}
           onFocus={handleExpand}
           onChange={(event) => {

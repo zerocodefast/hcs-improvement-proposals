@@ -7,7 +7,7 @@ sidebar_position: 4
 
 A condition step branches the workflow. It takes the enriched alert and routes it down one of several paths based on criteria you define. Conditions are where routing stops being a straight line and starts reflecting how the team actually triages risk.
 
-Configure conditions in the [Guard Routing Studio](https://hol.org/guard/routing).
+Configure conditions in the [Guard Routing Studio](https://hol.org/guard/docs/guard/routing/index).
 
 ## What a condition does
 
@@ -111,7 +111,7 @@ Use **Test run** to see which rule matched and which branch the alert took. The 
 
 ## See it in product
 
-- [Guard Routing Studio](https://hol.org/guard/routing)
+- [Guard Routing Studio](https://hol.org/guard/docs/guard/routing/index)
 
 ## Next guides
 

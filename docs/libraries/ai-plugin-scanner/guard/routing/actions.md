@@ -7,7 +7,7 @@ sidebar_position: 6
 
 An action step delivers an alert to a destination, or creates and updates a record as a result of the alert. Actions are the last active step before a terminal — once an action runs, the alert moves to resolution.
 
-Configure actions in the [Guard Routing Studio](https://hol.org/guard/routing).
+Configure actions in the [Guard Routing Studio](https://hol.org/guard/docs/guard/routing/index).
 
 ## What an action does
 
@@ -108,7 +108,7 @@ Use **Test run** to see the rendered message or record before it is sent. That v
 
 ## See it in product
 
-- [Guard Routing Studio](https://hol.org/guard/routing)
+- [Guard Routing Studio](https://hol.org/guard/docs/guard/routing/index)
 
 ## Next guides
 

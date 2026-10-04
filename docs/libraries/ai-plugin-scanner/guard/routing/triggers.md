@@ -7,7 +7,7 @@ sidebar_position: 2
 
 A trigger is the first step of every routing workflow. It is the event that starts the pipeline. Without a trigger, a workflow sits idle. When a matching event occurs, Guard creates an investigation alert and sends it down the connected path.
 
-Configure triggers in the [Guard Routing Studio](https://hol.org/guard/routing).
+Configure triggers in the [Guard Routing Studio](https://hol.org/guard/docs/guard/routing/index).
 
 ## What a trigger does
 
@@ -106,7 +106,7 @@ Use the **Test run** button in the studio to send a synthetic event through the 
 
 ## See it in product
 
-- [Guard Routing Studio](https://hol.org/guard/routing)
+- [Guard Routing Studio](https://hol.org/guard/docs/guard/routing/index)
 
 ## Next guides
 

@@ -50,7 +50,7 @@ History answers “has this happened before?”
 ## See it in product
 
 - [Guard receipts](https://hol.org/guard/receipts)
-- [Guard changes](https://hol.org/guard/changes)
+- [Guard changes](https://hol.org/guard/docs/guard/receipts-changes-and-history)
 - [Guard history](https://hol.org/guard/history)
 
 ## Next guides

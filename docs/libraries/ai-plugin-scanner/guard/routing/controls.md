@@ -7,7 +7,7 @@ sidebar_position: 5
 
 A control step paces, suppresses, or windows an alert before it reaches an action. Controls are what keep routing quiet by default. Without them, every matching alert reaches a destination, and the team learns to ignore the channel.
 
-Configure controls in the [Guard Routing Studio](https://hol.org/guard/routing).
+Configure controls in the [Guard Routing Studio](https://hol.org/guard/docs/guard/routing/index).
 
 ## Why controls come before actions
 
@@ -122,7 +122,7 @@ Use **Test run** to see whether a control allowed or blocked a sample alert, and
 
 ## See it in product
 
-- [Guard Routing Studio](https://hol.org/guard/routing)
+- [Guard Routing Studio](https://hol.org/guard/docs/guard/routing/index)
 
 ## Next guides
 

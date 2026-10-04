@@ -7,7 +7,7 @@ sidebar_position: 1
 
 Guard routing is how investigation alerts move from detection to resolution. Instead of every change interrupting every channel, routing lets you define a workflow that decides which alerts matter, how they are enriched, where they branch, how they are paced, and how they finally resolve.
 
-The visual builder for these workflows is the **Guard Routing Studio**, available at [hol.org/guard/routing](https://hol.org/guard/routing).
+The visual builder for these workflows is the **Guard Routing Studio**, available at [hol.org/guard/routing](https://hol.org/guard/docs/guard/routing/index).
 
 ## Why routing exists
 
@@ -40,7 +40,7 @@ A typical workflow moves through these in roughly that order, but routing is fle
 ## How to access the Routing Studio
 
 1. Sign in at [hol.org](https://hol.org)
-2. Open [hol.org/guard/routing](https://hol.org/guard/routing)
+2. Open [hol.org/guard/routing](https://hol.org/guard/docs/guard/routing/index)
 3. Choose an existing workflow to edit, or create a new one
 4. The studio opens a canvas where each step is a node you can drag, configure, and connect
 
@@ -84,7 +84,7 @@ Start with that shape, then add branches and controls only when the team's opera
 
 ## See it in product
 
-- [Guard Routing Studio](https://hol.org/guard/routing)
+- [Guard Routing Studio](https://hol.org/guard/docs/guard/routing/index)
 - [Guard dashboard](https://hol.org/guard/dashboard)
 
 ## Next guides

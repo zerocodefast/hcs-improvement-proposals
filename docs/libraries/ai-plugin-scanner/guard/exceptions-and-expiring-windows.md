@@ -46,7 +46,7 @@ In Guard 3.0, contextual exceptions do not weaken a managed-restrictive floor. A
 
 ## See it in product
 
-- [Guard exceptions](https://hol.org/guard/exceptions)
+- [Guard exceptions](https://hol.org/guard/docs/guard/exceptions-and-expiring-windows)
 - [Guard policy](https://hol.org/guard/policy)
 
 ## Next guides

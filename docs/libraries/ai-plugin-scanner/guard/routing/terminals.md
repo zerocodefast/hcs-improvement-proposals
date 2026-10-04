@@ -7,7 +7,7 @@ sidebar_position: 7
 
 A terminal step ends a workflow. Every path through a routing workflow must reach a terminal. The terminal records the final state of the alert and closes the investigation. Without a terminal, an alert stays open and appears as unresolved in the Guard dashboard.
 
-Configure terminals in the [Guard Routing Studio](https://hol.org/guard/routing).
+Configure terminals in the [Guard Routing Studio](https://hol.org/guard/docs/guard/routing/index).
 
 ## What a terminal does
 
@@ -114,7 +114,7 @@ Use **Test run** to confirm which terminal a sample alert reaches. The test view
 
 ## See it in product
 
-- [Guard Routing Studio](https://hol.org/guard/routing)
+- [Guard Routing Studio](https://hol.org/guard/docs/guard/routing/index)
 - [Guard dashboard](https://hol.org/guard/dashboard)
 
 ## Next guides

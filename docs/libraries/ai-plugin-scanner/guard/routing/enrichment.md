@@ -7,7 +7,7 @@ sidebar_position: 3
 
 An enrichment step adds context to an investigation alert before any decision is made. The raw event that a trigger produces is thin — it tells you what changed, but not what the change means. Enrichment fills in the surrounding picture so conditions and controls can branch on real signals instead of guesses.
 
-Configure enrichment steps in the [Guard Routing Studio](https://hol.org/guard/routing).
+Configure enrichment steps in the [Guard Routing Studio](https://hol.org/guard/docs/guard/routing/index).
 
 ## Why enrich first
 
@@ -99,7 +99,7 @@ Use **Test run** in the studio to inspect the enriched alert payload before it r
 
 ## See it in product
 
-- [Guard Routing Studio](https://hol.org/guard/routing)
+- [Guard Routing Studio](https://hol.org/guard/docs/guard/routing/index)
 
 ## Next guides
 

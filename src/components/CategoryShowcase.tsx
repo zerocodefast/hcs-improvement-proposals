@@ -189,7 +189,8 @@ export default function CategoryShowcase({
               <div className="standards-search">
                 <input
                   type="text"
-                  placeholder="Search..."
+                  placeholder={`Search ${title.toLowerCase()}...`}
+                  aria-label={`Search ${title.toLowerCase()}`}
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
                   className="standards-search-input"
@@ -207,9 +208,10 @@ export default function CategoryShowcase({
               }
             >
               {showCategoryFilter && categories.length > 1 && (
-                <select 
-                  value={selectedCategory} 
+                <select
+                  value={selectedCategory}
                   onChange={(e) => setSelectedCategory(e.target.value)}
+                  aria-label={`Filter ${title.toLowerCase()} by category`}
                   className="standards-filter-select"
                   style={preferCriticalAboveFoldStyles ? CRITICAL_SELECT_STYLE : undefined}
                 >
@@ -221,9 +223,10 @@ export default function CategoryShowcase({
               )}
               
               {showStatusFilter && (
-                <select 
-                  value={selectedStatus} 
+                <select
+                  value={selectedStatus}
                   onChange={(e) => setSelectedStatus(e.target.value)}
+                  aria-label={`Filter ${title.toLowerCase()} by status`}
                   className="standards-filter-select"
                   style={preferCriticalAboveFoldStyles ? CRITICAL_SELECT_STYLE : undefined}
                 >
