@@ -40,5 +40,5 @@ After applying a preset, you can:
 
 ## Next guides
 
-- [Conditions](../routing/conditions.md)
-- [Controls](../routing/controls.md)
+- [Conditions](./routing/conditions.md)
+- [Controls](./routing/controls.md)

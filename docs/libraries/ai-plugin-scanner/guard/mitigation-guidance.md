@@ -42,5 +42,5 @@ If a mitigation step is not applicable to your environment, you can file an exce
 
 ## Next guides
 
-- [Conditions](../routing/conditions.md)
-- [Terminals](../routing/terminals.md)
+- [Conditions](./routing/conditions.md)
+- [Terminals](./routing/terminals.md)

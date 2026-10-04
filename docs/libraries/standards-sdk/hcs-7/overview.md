@@ -182,7 +182,7 @@ const wasm = new WasmBridge();
 - `WasmBridge.createStateData` converts the EVM bridge output into the structure expected by your router (matching the `inputType.stateData` schema you registered).
 - `WasmBridge.executeWasm(state, messages)` invokes the router’s `process_state` export with your `register` payloads and returns the destination metadata topic ID.
 
-See the [Node guide](./server.md) for end‑to‑end samples that combine the bridges with the registry client.
+See the [Node guide](./server.mdx) for end‑to‑end samples that combine the bridges with the registry client.
 
 ---
 
@@ -237,7 +237,7 @@ If you prefer to fetch directly from Hedera topics, parse the HCS-1 messages per
 
 Continue with:
 
-- [Node guide](./server.md) for end-to-end registry + bridge flows
-- [Browser guide](./browser.md) for WalletConnect integrations
-- [Transactions](./tx.md) for low-level builders
-- [API reference](./api.md) for all exported types and classes
+- [Node guide](./server.mdx) for end-to-end registry + bridge flows
+- [Browser guide](./browser.mdx) for WalletConnect integrations
+- [Transactions](./tx.mdx) for low-level builders
+- [API reference](./api.mdx) for all exported types and classes

@@ -112,7 +112,7 @@ _ = topicID
 
 ## Where to Next
 
-- [Server SDK](./server.md) — instantiate `HCS21Client`, inscribe manifests, and publish declarations from Node.js services.
-- [Browser SDK](./browser.md) — wire HCS-21 into wallet-connected front-ends.
-- [Transaction Helpers](./tx.md) — build custom workflows using low-level builders.
-- [API Reference](./api.md) — quick lookup for available types and classes.
+- [Server SDK](./server.mdx) — instantiate `HCS21Client`, inscribe manifests, and publish declarations from Node.js services.
+- [Browser SDK](./browser.mdx) — wire HCS-21 into wallet-connected front-ends.
+- [Transaction Helpers](./tx.mdx) — build custom workflows using low-level builders.
+- [API Reference](./api.mdx) — quick lookup for available types and classes.

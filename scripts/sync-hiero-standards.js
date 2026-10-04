@@ -237,7 +237,46 @@ function fixMermaidBlocks(content) {
   return content.replace(regex, '```mermaid\n$1');
 }
 
+
+/**
+ * Normalize wrong-parent relative links in GENERATED standards content
+ * (V7-03). Upstream sources occasionally write `../X` for a sibling that
+ * lives at `./X` relative to the linking file (e.g. hcs-9 specification
+ * overview linking `../base-schema`). Resolved literally, the link leaves
+ * the standard's directory and 404s on the built site. When the leading
+ * `../` segment resolves to a missing path while stripping it resolves to a
+ * real sibling file, rewrite the link to `./X`. Normative text is untouched —
+ * only the href's relative form changes.
+ */
+function fixWrongParentRelativeLinks(destPath, content) {
+  const dir = path.dirname(destPath);
+  const resolves = (rel) => {
+    const base = path.resolve(dir, rel);
+    return ['.md', '.mdx'].some((ext) => fs.existsSync(base + ext)) ||
+      fs.existsSync(path.join(base, 'index.md')) ||
+      fs.existsSync(path.join(base, 'index.mdx'));
+  };
+  return content.replace(
+    /\]\((\.\.\/[^)\s#]+)(#[^)\s]*)?\)/g,
+    (match, rel, fragment) => {
+      if (resolves(rel)) return match; // correct as written
+      const stripped = rel.slice(3);
+      if (!resolves(stripped)) return match; // neither form resolves — leave
+      return `](./${stripped}${fragment ?? ''})`;
+    },
+  );
+}
+
 function fixHcs27(content) {
+  // Upstream HCS-27 sources carry malformed hrefs of the form
+  // `http://./merkle-tree-profile.md#fragment` (an autolinker glued an
+  // http:// prefix onto a relative link). Left alone they emit literal
+  // `http://./...` hrefs that 404. Repair the URL FORM only — the link
+  // text and normative content are untouched.
+  content = content.replace(
+    /\]\(http:\/\/(\.[^)\s]+)\)/g,
+    (_m, rel) => `](${rel})`,
+  );
   return content.replace(/hcs-27:0:&lt;ttl&gt;:0/g, 'hcs-27:0:0')
     .replace(
       /Where `0` indicates indexed topic behavior, `&lt;ttl&gt;` is cache TTL in seconds, and the final `:0` is the HCS-27 topic enum \(`checkpoint`\)\./g,
@@ -516,6 +555,7 @@ function copyRecursive(srcDir, destDir, stats = { copied: 0, skipped: 0 }) {
         if (extractHcsIdFromPath(destPath) === 'hcs-27') {
           escapedContent = fixHcs27(escapedContent);
         }
+        escapedContent = fixWrongParentRelativeLinks(destPath, escapedContent);
 
         fs.writeFileSync(destPath, escapedContent, 'utf8');
       } else {
