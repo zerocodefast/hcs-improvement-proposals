@@ -47,6 +47,8 @@ for (const file of walkMarkdown(DOCS_ROOT)) {
   const linkRe = /\]\(([^)\s#]+)(#[^)\s]*)?\)/g;
   for (const match of content.matchAll(linkRe)) {
     const href = match[1];
+    const fragment = (match[2] ?? '').slice(1) || null;
+    const fragSuffix = match[2] ?? '';
     if (href.startsWith('mailto:')) continue;
 
     // Class 3: malformed http://./ autolinker damage.
@@ -75,7 +77,26 @@ for (const file of walkMarkdown(DOCS_ROOT)) {
       ? [target]
       : [target, `${target}.md`, `${target}.mdx`,
          path.join(target, 'index.md'), path.join(target, 'index.mdx')];
-    if (candidates.some((c) => existsSync(c))) continue;
+    const resolved = candidates.find((c) => existsSync(c));
+    if (resolved) {
+      // Fragment target must match a generated heading anchor or explicit id
+      // in the resolved document (Docusaurus slugify: lowercase, strip
+      // non-word chars, spaces to dashes).
+      if (fragment) {
+        const doc = readFileSync(resolved, 'utf8');
+        const slugify = (t) =>
+          t.toLowerCase().replace(/[^\w\s-]/g, '').trim().replace(/\s+/g, '-');
+        const anchors = new Set([
+          ...[...doc.matchAll(/\{#([^}]+)\}/g)].map((m) => m[1]),
+          ...[...doc.matchAll(/^#{1,6}\s+(.+)$/gm)].map((m) => slugify(m[1])),
+          ...[...doc.matchAll(/id="([^"]+)"/g)].map((m) => m[1]),
+        ]);
+        if (!anchors.has(fragment)) {
+          report('fragment-target-missing', file, `${href}${fragSuffix}`);
+        }
+      }
+      continue;
+    }
 
     // Class 1: .md link whose target exists only as .mdx.
     if (/\.md$/.test(target) && existsSync(target.replace(/\.md$/, '.mdx'))) {
