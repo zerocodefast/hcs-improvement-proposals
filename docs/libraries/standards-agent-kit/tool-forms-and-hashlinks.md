@@ -1,4 +1,7 @@
 ---
+title: Form-Driven Tools and HashLink Blocks
+description: >-
+  Hashlink-aware tool forms for the standards agent kit: encode form parameters into HCS-3 content-addressed links and resolve them back into executable tool calls.
 sidebar_position: 6
 ---
 

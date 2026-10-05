@@ -1,5 +1,7 @@
 ---
 title: Slack integration
+description: >-
+  Send HOL Guard approvals, alerts, and advisory digests to Slack channels with per-workspace routing.
 sidebar_position: 2
 ---
 

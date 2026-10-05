@@ -1,5 +1,7 @@
 ---
 title: Devices and shared trust memory
+description: >-
+  Pair HOL Guard across devices with shared trust: move approvals and policy between laptops and servers without weakening verification.
 ---
 
 # Devices and shared trust memory

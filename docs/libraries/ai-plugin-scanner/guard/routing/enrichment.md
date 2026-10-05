@@ -1,5 +1,7 @@
 ---
 title: Enrichment
+description: >-
+  Enrichment steps add context — request bodies, environment facts, and registry data — to routing decisions in the Guard Routing Studio.
 sidebar_position: 3
 ---
 

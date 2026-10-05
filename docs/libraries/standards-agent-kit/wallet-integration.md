@@ -1,4 +1,7 @@
 ---
+title: Wallet Integration
+description: >-
+  Integrate Hedera wallets with the standards agent kit through SignerProviderRegistry and ByteBuildRegistry: construct, sign, and submit transaction bytes without handling keys directly.
 sidebar_position: 4
 ---
 
