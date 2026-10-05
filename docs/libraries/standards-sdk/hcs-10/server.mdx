@@ -22,6 +22,8 @@ The Server SDK extends the [Base Client](./base-client.mdx) to provide server-sp
 - Store and retrieve agent profiles
 
 ```mermaid
+accTitle: Overview
+accDescr: Diagram showing: Backend Service; AI Agent; Registry; HCS Topics; Other Agents; Users; Creates & Manages; Registers with.
 flowchart TD
     A[Backend Service] -->|Creates & Manages| B[AI Agent]
     B -->|Registers with| C[Registry]
@@ -39,6 +41,8 @@ flowchart TD
 HCS-10 uses Hedera Consensus Service (HCS) to create secure communication channels between agents.
 
 ```mermaid
+accTitle: Understanding HCS-10 Architecture
+accDescr: Diagram showing: 1\. Register; 2\. Manage; 3\. Request; 4\. Record; 5\. Create; 6\. Confirm; 7\. Exchange.
 flowchart LR
     Registry(Registry Topic)
     AgentA(Agent A)
@@ -218,6 +222,8 @@ if (result.success) {
 ### Agent Creation Process
 
 ```mermaid
+accTitle: Agent Creation Process
+accDescr: Agent Creation Process diagram.
 sequenceDiagram
     participant App as Your App
     participant SDK as HCS10Client
@@ -321,6 +327,8 @@ The HCS-10 Server SDK can be integrated with the Standards Agent Kit to create A
 The Standards Agent Kit builds on top of the HCS-10 Server SDK to provide higher-level abstractions for AI agent development:
 
 ```mermaid
+accTitle: Architecture Relationship
+accDescr: Diagram showing: HCS-10 Server SDK; Standards Agent Kit; Language Models; Backend Service; Hedera Network; Extends; Integrates with; Uses.
 flowchart TD
     HCS10SDK[HCS-10 Server SDK]
     AgentKit[Standards Agent Kit]
@@ -1022,6 +1030,8 @@ async function createMessageFeeConnection(
 ### Fee-Based Topic Flow
 
 ```mermaid
+accTitle: Fee-Based Topic Flow
+accDescr: Diagram showing: Client/User; Fee-Based Topic; Service Treasury; Service Agent; Connection Topic.
 flowchart TD
     Client["Client/User"] -- "1\. Send request + Fee" --> FeeBasedTopic["Fee-Based Topic"]
     FeeBasedTopic -- "2\. Fee transferred" --> ServiceWallet["Service Treasury"]
@@ -1181,6 +1191,8 @@ Manage connections between agents using the following methods:
 ### Connection Flow
 
 ```mermaid
+accTitle: Connection Flow
+accDescr: Connection Flow diagram.
 sequenceDiagram
     participant Alice as Agent A
     participant AITopic as A's Inbound Topic
@@ -1737,6 +1749,8 @@ Exchange messages with connected agents:
 ### Messaging Flow
 
 ```mermaid
+accTitle: Messaging Flow
+accDescr: Messaging Flow diagram.
 sequenceDiagram
     participant A as Agent A
     participant Connection as Connection Topic

@@ -88,6 +88,8 @@ Best practices
 
 Diagram
 ```mermaid
+accTitle: Tool creates entity flow
+accDescr: Diagram showing: Tool creates entity; Agent captures IDs/HRLs; Active window memory; Prune -> Long-term store; Searchable history; User says 'use my last topic'; Resolve to ID/HRL.
 flowchart TD
   A[Tool creates entity] --> B[Agent captures IDs/HRLs]
   B --> C[Active window memory]

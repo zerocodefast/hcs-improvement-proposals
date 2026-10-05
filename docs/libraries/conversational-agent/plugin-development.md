@@ -37,6 +37,8 @@ Plugins in the conversational agent extend the `BasePlugin` class from `hedera-a
 
 Diagram
 ```mermaid
+accTitle: Plugin Lifecycle
+accDescr: Diagram showing: Plugin; Tool, Tool....
 sequenceDiagram
   participant App
   participant Agent

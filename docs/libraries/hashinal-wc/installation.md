@@ -15,6 +15,8 @@ This guide will help you set up Hashinal Wallet Connect SDK for your specific us
 The SDK provides two distribution formats to support different application architectures:
 
 ```mermaid
+accTitle: Installation Methods
+accDescr: Diagram showing: Application Type; UMD Build<br/>via HCS Topic; ESM Build<br/>via NPM; No Installation<br/>Required; NPM/Yarn<br/>Installation.
 graph LR
     subgraph "Choose Your Path"
         A[Application Type] --> B{Inscribed HTML?}
@@ -119,6 +121,8 @@ nvm alias default 20
 You'll need a WalletConnect Cloud Project ID to enable wallet connections:
 
 ```mermaid
+accTitle: 2. WalletConnect Project ID
+accDescr: Diagram showing: Visit WalletConnect Cloud; Sign In/Sign Up; Create New Project; Name Your Project; Copy Project ID.
 graph LR
     A[Visit WalletConnect Cloud] --> B[Sign In/Sign Up]
     B --> C[Create New Project]

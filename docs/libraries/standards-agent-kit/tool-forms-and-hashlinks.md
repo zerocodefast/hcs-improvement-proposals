@@ -24,6 +24,8 @@ The Agent Kit adds Zod form metadata and a FormValidatable interface so a tool c
 Mental model
 
 ```mermaid
+accTitle: Form-Driven Tools
+accDescr: Diagram showing: Tool Schema (Zod + withRender); Ask UI to render form; Execute immediately; User submits values; Return transactionBytes; Submit via SDK; Wallet executes; Success payload + hashLinkBlock.
 flowchart LR
   A["Tool Schema (Zod + withRender)"] --> B{"Need Form?"}
   B -->|Yes| C["Ask UI to render form"]

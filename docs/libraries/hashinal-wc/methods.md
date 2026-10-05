@@ -15,6 +15,8 @@ Complete reference documentation for all Hashinal Wallet Connect SDK methods.
 The SDK provides methods organized into functional categories:
 
 ```mermaid
+accTitle: Method Categories
+accDescr: Diagram showing: Hashinal WC SDK; Connection Management; Account Operations; Transfer Operations; Topic & Messaging; Token Management; NFT Operations; Smart Contracts.
 graph TD
     SDK[Hashinal WC SDK] --> Connection[Connection Management]
     SDK --> Account[Account Operations]

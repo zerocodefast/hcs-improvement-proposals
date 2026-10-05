@@ -26,6 +26,8 @@ HCS-17 provides deterministic state hashes so Floras can prove what data every P
 | Publish | `computeAndPublish` | Fetches running hashes, computes, and submits to the state topic. |
 
 ```mermaid
+accTitle: HCS-17 spec primer
+accDescr: Diagram showing: Petal hash; Flora hash; Bloom hash.
 graph LR
   PetalA[Petal hash] --> FloraHash[Flora hash]
   PetalB[Petal hash] --> FloraHash

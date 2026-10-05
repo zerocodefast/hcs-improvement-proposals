@@ -22,6 +22,8 @@ HCS-21 keeps Floras in sync by pairing a manifest (HCS-1) with on-chain declarat
 - **Filtering**: Capability metadata (`discovery_tags`, `communication_channels`, `extras`) lets registries surface filters without downloading each manifest.
 
 ```mermaid
+accTitle: HCS-21 spec primer
+accDescr: HCS-21 spec primer diagram.
 sequenceDiagram
     participant Dev as Adapter Publisher
     participant H1 as HCS-1

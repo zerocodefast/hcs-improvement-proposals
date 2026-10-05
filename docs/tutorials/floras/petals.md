@@ -22,6 +22,8 @@ The HCS-15 spec (see `/docs/standards/hcs-15.md`) is explicit about what makes a
 | **Discovery announcement** | Not mandatory, but recommended: Petals should announce availability over HCS-18 topics so other Floras can discover ready members. |
 
 ```mermaid
+accTitle: Canonical requirements
+accDescr: Diagram showing: Base Account\nECDSA key); Petal Account\nsame key); HCS-16 Flora); Registry Broker); createPetalAccount; HCS-11 profile; Join requests; Ledger challenge.
 flowchart TB
   Base[(Base Account\nECDSA key)] -->|createPetalAccount| Petal[(Petal Account\nsame key)]
   Petal -->|HCS-11 profile| Profile{{HCS-11}}

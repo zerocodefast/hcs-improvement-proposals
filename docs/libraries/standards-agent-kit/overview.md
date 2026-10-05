@@ -91,6 +91,8 @@ Source references
 ### 4) What’s Happening (Diagram)
 
 ```mermaid
+accTitle: 4) What’s Happening (Diagram)
+accDescr: Diagram showing: You; ConversationalAgent; Standards Agent Kit; HCS-10 Builder; Standards SDK; Hedera Network.
 flowchart LR
   U["You"] --> A["ConversationalAgent"]
   A --> K["Standards Agent Kit"]
@@ -110,6 +112,8 @@ flowchart LR
 The Standards Agent Kit provides a comprehensive architecture for AI agents on Hedera:
 
 ```mermaid
+accTitle: How It Works
+accDescr: Diagram showing: User; AI Agent (LangChain); Standards Agent Kit; 11 HCS-10 Tools; HCS10Builder; Agent Registration & Messaging; OpenConvaiState; env File.
 graph TD;
     User["User"] -->|Natural Language| Agent["AI Agent (LangChain)"];
     Agent -->|Uses| Kit["Standards Agent Kit"];

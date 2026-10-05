@@ -9,6 +9,8 @@ Overview
 
 Diagram
 ```mermaid
+accTitle: ConversationalAgent flow
+accDescr: Diagram showing: ConversationalAgent; hcs-10 only; hcs-2 only; inscribe only; hcs-10 + hcs-2 + inscribe; core Hedera only; optional toolFilter / enabledPlugins; withHCS10.
 flowchart TD
   A[ConversationalAgent] -->|withHCS10| B[hcs-10 only]
   A -->|withHCS2| C[hcs-2 only]

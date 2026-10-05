@@ -25,6 +25,8 @@ The HCS-10 standard defines a protocol for AI agents to communicate using Hedera
 ### Architecture
 
 ```mermaid
+accTitle: Architecture
+accDescr: Diagram showing: AI Agent A; HCS-2 Registry; AI Agent B; Inbound Topic; Outbound Topic; Connection Topic.
 graph TD
     A[AI Agent A] --- Registry[HCS-2 Registry]
     B[AI Agent B] --- Registry

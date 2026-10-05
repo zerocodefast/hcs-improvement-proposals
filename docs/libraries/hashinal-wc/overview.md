@@ -25,6 +25,8 @@ Hashinal Wallet Connect SDK is a powerful abstraction layer for Hedera Wallet Co
 The SDK architecture provides two deployment models to suit different application needs:
 
 ```mermaid
+accTitle: Architecture
+accDescr: Diagram showing: Inscribed HTML<br/>Hashinals; React/Next.js<br/>Applications; Vue/Nuxt<br/>Applications; Other JS<br/>Frameworks; UMD Build<br/>window.HashinalsWalletConnectSDK; ESM Build<br/>@hashgraphonline/hashinal-wc; Hedera Wallet Con
 graph TB
     subgraph "Application Layer"
         HTML[Inscribed HTML<br/>Hashinals]

@@ -38,6 +38,8 @@ npm install @hashgraph/sdk @hashgraphonline/standards-sdk
 ### Diagram: What happens when I send a message?
 
 ```mermaid
+accTitle: Diagram: What happens when I send a message?
+accDescr: Diagram showing: You type plain English; Register/connect/message agents; Manage registry entries; Create Hashinals / store content; HBAR, tokens, topics, files, contracts; Hedera Network; HCS-10; HCS-2.
 flowchart LR
     A[You type plain English] --> B(ConversationalAgent)
     B --> C{Picks a Tool}
@@ -329,6 +331,8 @@ const response = await agent.processMessage(
 ### Diagram: Mode selection
 
 ```mermaid
+accTitle: Diagram: Mode selection
+accDescr: Diagram showing: Your request; Agent signs & executes; Agent returns base64 tx bytes; You sign (wallet/SDK); Submit to Hedera; autonomous; returnBytes.
 flowchart TD
     A["Your request"] --> B{"Mode?"}
     B -->|autonomous| C["Agent signs & executes"]

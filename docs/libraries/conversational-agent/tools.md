@@ -13,6 +13,8 @@ The Conversational Agent includes:
 
 Diagram
 ```mermaid
+accTitle: Tool Categories
+accDescr: Diagram showing: Agent Tools; HCS-10 tools; HCS-2 tools; Inscribe tools; Core Hedera (HAK); Accounts; HTS; HCS.
 flowchart TD
   A["Agent Tools"] --> B["HCS-10 tools"]
   A --> C["HCS-2 tools"]

@@ -19,6 +19,8 @@ This page tracks all inscribed versions on Hedera Consensus Service, allowing Ha
 ## How Inscribed Versions Work
 
 ```mermaid
+accTitle: How Inscribed Versions Work
+accDescr: Diagram showing: SDK Release; Build UMD Bundle; Compress with zstd; Inscribe to HCS Topic; Topic ID Generated; Reference in Hashinal; hcs://1/0.0.8084872.
 graph LR
     A[SDK Release] --> B[Build UMD Bundle]
     B --> C[Compress with zstd]

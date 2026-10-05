@@ -24,6 +24,8 @@ HCS-16 extends the HCS-15 Petal world into cooperative formations. Each Flora is
 | State topic | Receives HCS-17 state updates | `HCS16Client#createFloraAccountWithTopics` |
 
 ```mermaid
+accTitle: 0. Understand HCS-16
+accDescr: Diagram showing: Flora Account\n(threshold key); KeyList\n(Petal A,B,C); CTopic\nCoordination; TTopic\nProposals; STopic\nState proofs; join vote; schedule sign; state_update.
 flowchart TB
   subgraph FloraAccount["Flora Account\n(threshold key)"]
     direction TB

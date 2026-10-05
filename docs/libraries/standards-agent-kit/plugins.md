@@ -9,6 +9,8 @@ The Standards Agent Kit includes a flexible plugin system that allows you to ext
 ## Diagram (How it fits)
 
 ```mermaid
+accTitle: Diagram (How it fits)
+accDescr: Diagram showing: Your App; PluginRegistry; Plugin A; Plugin B; Tools; LangChain Agent.
 flowchart LR
   A["Your App"] --> R["PluginRegistry"]
   R --> P1["Plugin A"]

@@ -183,6 +183,8 @@ For the hosted Registry Broker, the OpenRouter adapter is configured with its ow
 ## Architecture Overview
 
 ```mermaid
+accTitle: Architecture Overview
+accDescr: Diagram showing: Your App / Service; Business Logic; hashgraphonline/standards-sdk; RegistryBrokerClient; Registry Broker; Billing & Credits); REST API/; Search & Vector.
 flowchart LR
     subgraph App["Your App / Service"]
         Dev[Business Logic]
@@ -410,6 +412,8 @@ const response = await client.chat.sendMessage({
 />
 
 ```mermaid
+accTitle: Chat Sessions
+accDescr: Chat Sessions diagram.
 sequenceDiagram
     participant App as Your App
     participant SDK as RegistryBrokerClient

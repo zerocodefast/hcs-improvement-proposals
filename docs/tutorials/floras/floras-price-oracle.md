@@ -22,6 +22,8 @@ All snippets rely on the public SDK entrypoints (`@hol-org/standards-sdk`)—no 
 ### Architecture overview
 
 ```mermaid
+accTitle: Architecture overview
+accDescr: Diagram showing: Petal A\nprice-worker; Petal B\nprice-worker; Petal C\nprice-worker; Flora Threshold Account); CTopic; TTopic; STopic; HCS-2 Version Pointer.
 flowchart TB
   subgraph Petals
     direction TB

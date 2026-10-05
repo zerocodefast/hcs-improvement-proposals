@@ -16,6 +16,8 @@ The HCS-3 module enables applications to reference and load resources directly f
 ## Visual Overview
 
 ```mermaid
+accTitle: Visual Overview
+accDescr: Diagram showing: Your App; Resolve HRL<br/>hcs://1/<topicId>; Blob/Text; loadImage; loadVideo; loadAudio; loadScript; loadGLB.
 flowchart LR
   A[Your App] --> B[Resolve HRL<br/>hcs://1/<topicId>]
   B -->|fetch via CDN/Mirror| C[Blob/Text]

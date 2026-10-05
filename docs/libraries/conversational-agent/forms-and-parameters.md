@@ -121,6 +121,8 @@ Up next: [Entity Memory](entity-memory) — how the agent remembers IDs and cont
 
 Diagram
 ```mermaid
+accTitle: User asks for action" flow
+accDescr: Diagram showing: User asks for action; Call tool directly; Agent returns formMessage; Render form UI; Submit form (processFormSubmission); Response / bytes / receipt.
 flowchart LR
   A["User asks for action"] --> B{"Enough params?"}
   B -->|Yes| C["Call tool directly"]

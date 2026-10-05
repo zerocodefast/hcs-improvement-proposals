@@ -39,6 +39,8 @@ This package provides a standalone conversational AI agent built on top of `hede
 ## Diagram
 
 ```mermaid
+accTitle: You flow
+accDescr: Diagram showing: You; Agent; Transaction or Query); Hedera; Receipt / Bytes / Data; type; selects; builds.
 flowchart TD
   U[You] -->|type| A[Agent]
   A -->|selects| T{Tool}
@@ -153,6 +155,8 @@ console.log(response.response);
 ## How It Works
 
 ```mermaid
+accTitle: How It Works
+accDescr: Diagram showing: User; ConversationalAgent; Built-in Plugins; Hedera Agent Kit v2.0.3; HCS10Plugin; HCS2Plugin; InscribePlugin; Agent Communication.
 graph TD;
     User["User"] -->|Natural Language| CA["ConversationalAgent"];
     CA -->|Manages| Plugins["Built-in Plugins"];

@@ -208,6 +208,8 @@ await updateEnvFile(envFilePath, {
 ## Diagram (What the CLI does)
 
 ```mermaid
+accTitle: Diagram (What the CLI does)
+accDescr: Diagram showing: Start CLI; Initialize HCS-10 client; Load agents from .env (optional); Interactive Menu; Register Agent; Initiate/Accept Connection; Send/Receive Messages; Persist to .env.
 flowchart TD
   Start["Start CLI"] --> Init["Initialize HCS-10 client"]
   Init --> Load["Load agents from .env (optional)"]

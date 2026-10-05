@@ -74,6 +74,8 @@ fmt.printf("Resolved: %v, Profile: %s\n", result.Metadata.Resolved, result.Metad
 UAID generation
 
 ```mermaid
+accTitle: Visual Overview
+accDescr: Diagram showing: Input; Canonicalize fields\nHash → Base58; uaid:aid + routing; Sanitize DID id; uaid:did + routing.
 flowchart LR
   A[Input] --> B{"Has DID?"}
   B -->|No| C["Canonicalize fields\nHash → Base58"]

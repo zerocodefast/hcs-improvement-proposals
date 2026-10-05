@@ -22,6 +22,8 @@ The HCS-6 module provides support for dynamic hashinals - inscriptions that can 
 HCS-6 builds upon HCS-2 registries with specific constraints for dynamic hashinals:
 
 ```mermaid
+accTitle: Architecture Overview
+accDescr: Diagram showing: Application; HCS6Client; HCS6BrowserClient; HCS-6 Registry<br>Non-indexed; HCS-1 Topic<br>Content; uses; creates; inscribes.
 graph TB
     subgraph "HCS-6 Architecture"
         App[Application]
@@ -167,6 +169,8 @@ Note: Browser client requires wallet integration for write operations.
 First, create a non-indexed registry specifically for dynamic hashinals:
 
 ```mermaid
+accTitle: 1. Creating a Dynamic Registry
+accDescr: 1. Creating a Dynamic Registry diagram.
 sequenceDiagram
     participant App as Application
     participant Client as HCS6Client
@@ -204,6 +208,8 @@ if (response.success) {
 The complete flow for creating updateable content:
 
 ```mermaid
+accTitle: 2. Creating and Registering a Dynamic Hashinal
+accDescr: 2. Creating and Registering a Dynamic Hashinal diagram.
 sequenceDiagram
     participant App as Application
     participant Client as HCS6Client
@@ -259,6 +265,8 @@ if (result.success) {
 To update the content, create a new inscription and register it. If the registry has a submit key, you must provide it:
 
 ```mermaid
+accTitle: 3. Updating a Dynamic Hashinal
+accDescr: 3. Updating a Dynamic Hashinal diagram.
 sequenceDiagram
     participant App as Application
     participant Client as HCS6Client
@@ -321,6 +329,8 @@ console.log(`Updated to: ${updateResult.inscriptionTopicId}`);
 Retrieve the current state of a dynamic hashinal:
 
 ```mermaid
+accTitle: 4. Querying Dynamic Hashinal State
+accDescr: 4. Querying Dynamic Hashinal State diagram.
 sequenceDiagram
     participant App as Application
     participant Client as HCS6Client
@@ -404,6 +414,8 @@ if (topicInfo.memo.startsWith('hcs-6:1:')) {
 A common use case for HCS-6 is managing game assets that change over time:
 
 ```mermaid
+accTitle: Use Case: Evolving Game Assets
+accDescr: Diagram showing: Character Registry<br>HCS-6; Level 1 Character<br>HCS-1 Topic; Level 10 Character<br>HCS-1 Topic; Level 50 Character<br>HCS-1 Topic; Game Client; Marketplace; Rankings; register.
 graph TB
     subgraph "Dynamic Game Asset System"
         Registry[Character Registry<br>HCS-6]

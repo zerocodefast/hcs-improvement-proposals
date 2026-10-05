@@ -18,6 +18,8 @@ Prerequisites
 At a glance: your template is stored on‑chain once, and your tool returns a small descriptor that UIs render safely.
 
 ```mermaid
+accTitle: Mental Model
+accDescr: Diagram showing: Author Template (HTML+CSS); HCS-12 Registry/Assembly; Block Topic hcs://12/...; Tool Output: hashLinkBlock JSON; App Renderer; BlockLoader (fetch template); Substitute Attributes; Sandboxed iFrame.
 flowchart LR
   A["Author Template (HTML+CSS)"] --> B{"Publish Block"}
   B -->|Server: SDK| C["HCS-12 Registry/Assembly"]
@@ -188,6 +190,8 @@ Notes
 Decision helper
 
 ```mermaid
+accTitle: 3) Publish (wallet path)
+accDescr: Diagram showing: llet Path: ByteBuildRegistry.build() + walletExecutor(bytes); t (createAssemblyTopic → registerBlock → addBlockToAssembly); Browser dApp; Server/CLI.
 flowchart TD
   Q{"Where are you running?"}
   Q -->|Browser dApp| W["Wallet Path: ByteBuildRegistry.build() + walletExecutor(bytes)"]

@@ -22,6 +22,8 @@ The HCS-2 module provides a decentralized registry for Hedera Consensus Service 
 HCS-2 provides a standardized way to manage topic registries using Hedera Consensus Service:
 
 ```mermaid
+accTitle: Architecture Overview
+accDescr: Diagram showing: Application; HCS2Client; BrowserHCS2Client; Hedera Consensus Service; Registry Topic; Topic Entries; uses; interacts with.
 graph TB
     subgraph "HCS-2 Architecture"
         App[Application]
@@ -45,6 +47,8 @@ graph TB
 The HCS-2 standard defines two types of registry topics, each with different behaviors and use cases:
 
 ```mermaid
+accTitle: Registry Types: Indexed vs. Non-Indexed
+accDescr: Diagram showing: Indexed Registry<br>HCS2RegistryType.INDEXED = 0; Non-Indexed Registry<br>HCS2RegistryType.NON_INDEXED = 1; Update Operations; Delete Operations; Full Message History; Latest Message Only; Supports; Requires.
 graph TB
     subgraph "Registry Types"
         IndexedRegistry[Indexed Registry<br>HCS2RegistryType.INDEXED = 0]
@@ -263,6 +267,8 @@ client = Hcs2Client(
 First, you need to create a topic that will serve as your registry:
 
 ```mermaid
+accTitle: 1. Creating a Registry
+accDescr: 1. Creating a Registry diagram.
 sequenceDiagram
     participant App as Application
     participant Client as HCS2Client
@@ -344,6 +350,8 @@ nonIndexedResult = client.create_registry(registry_type=Hcs2RegistryType.NON_IND
 Once you have a registry, you can register entries (topics) in it:
 
 ```mermaid
+accTitle: 2. Registering Entries
+accDescr: 2. Registering Entries diagram.
 sequenceDiagram
     participant App as Application
     participant Client as HCS2Client
@@ -414,6 +422,8 @@ fmt.printf("Entry registered. Sequence number: %d\n", register_result.SEQUENCE_N
 In indexed registries, you can update existing entries:
 
 ```mermaid
+accTitle: 3. Updating Entries
+accDescr: 3. Updating Entries diagram.
 sequenceDiagram
     participant App as Application
     participant Client as HCS2Client
@@ -483,6 +493,8 @@ fmt.printf("Entry updated. New sequence number: %d\n", update_result.SEQUENCE_NU
 Remove entries from an indexed registry:
 
 ```mermaid
+accTitle: 4. Deleting Entries
+accDescr: 4. Deleting Entries diagram.
 sequenceDiagram
     participant App as Application
     participant Client as HCS2Client
@@ -548,6 +560,8 @@ fmt.printf("Entry deleted. Sequence number: %d\n", delete_result.SEQUENCE_NUMBER
 Point an entire registry to a new topic for versioning or upgrades:
 
 ```mermaid
+accTitle: 5. Migrating a Registry
+accDescr: 5. Migrating a Registry diagram.
 sequenceDiagram
     participant App as Application
     participant Client as HCS2Client
@@ -622,6 +636,8 @@ fmt.printf("Registry migrated to: %s\n", newRegistryTopicID)
 Retrieve entries from a registry and process them:
 
 ```mermaid
+accTitle: Querying Registries
+accDescr: Querying Registries diagram.
 sequenceDiagram
     participant App as Application
     participant Client as HCS2Client
@@ -681,6 +697,8 @@ fmt.printf(" Topic: %s, Seq: %d\n", entry.Message.TopicID, entry.SEQUENCE)
 ## Full Lifecycle Example
 
 ```mermaid
+accTitle: Full Lifecycle Example
+accDescr: Full Lifecycle Example diagram.
 sequenceDiagram
     participant App as Application
     participant Client as HCS2Client
@@ -726,6 +744,8 @@ sequenceDiagram
 One common use case for HCS-2 is building a service directory where different applications can register their APIs or services:
 
 ```mermaid
+accTitle: Use Case: Building a Decentralized Service Directory
+accDescr: Diagram showing: Service Registry; Payment Service; Storage Service; Authentication Service; Mobile App; Web App; IoT Device; Register.
 graph TB
     subgraph "Decentralized Service Directory"
         Registry[Service Registry]

@@ -11,6 +11,8 @@ The `HCS10Client` within the `@hashgraphonline/standards-agent-kit` serves as a 
 ## Diagram (Where it sits)
 
 ```mermaid
+accTitle: Diagram (Where it sits)
+accDescr: Diagram showing: Your App; HCS10Client (Wrapper); Standards SDK HCS-10; Hedera Network.
 flowchart LR
   App["Your App"] --> Kit["HCS10Client (Wrapper)"]
   Kit --> SDK["Standards SDK HCS-10"]
@@ -42,6 +44,8 @@ You'll interact with this `HCS10Client` instance directly when you need:
 This diagram shows the relationship between the Kit's wrapper client, the SDK client, and other components:
 
 ```mermaid
+accTitle: Conceptual Architecture
+accDescr: Diagram showing: Application Code / Custom Logic; LangChain Agent (Uses Tools + App State); Kit HCS10Client (Wrapper); LangChain Tools; Application Manages State); SDK HCS10Client; Hedera Network (HCS, Registry).
 graph TD;
     subgraph "User Application Logic"
         direction LR;

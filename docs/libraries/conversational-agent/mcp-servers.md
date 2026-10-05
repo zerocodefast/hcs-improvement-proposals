@@ -26,6 +26,8 @@ Model Context Protocol (MCP) is a standardized protocol for connecting AI models
 
 Diagram
 ```mermaid
+accTitle: Quick Start
+accDescr: Diagram showing: ConversationalAgent; MCP Server: filesystem); MCP Server: github); MCP Server: database); read_file/write_file; create_issue/list_issues; execute_query/list_tables.
 flowchart LR
   A[ConversationalAgent] -- connects --> B[(MCP Server: filesystem)]
   A -- connects --> C[(MCP Server: github)]

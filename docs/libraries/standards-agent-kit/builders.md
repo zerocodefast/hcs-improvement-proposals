@@ -16,6 +16,8 @@ All builders are designed to work with HederaAgentKit and optionally support wal
 ## Diagram
 
 ```mermaid
+accTitle: Register / Connect / Message" flow
+accDescr: Diagram showing: Register / Connect / Message; Standards SDK; Create Registry / Entries; Dynamic Hashinals; file/url/buffer → inscription; Hedera Network.
 flowchart LR
   subgraph HCS-10
     A10["Register / Connect / Message"] --> C10["Standards SDK"]
@@ -33,6 +35,8 @@ flowchart LR
 ```
 
 ```mermaid
+accTitle: Return transactionBytes → walletExecutor" flow
+accDescr: Diagram showing: Return transactionBytes → walletExecutor; Submit via SDK (server).
 flowchart TD
   Q{"Wallet available?"} -->|Yes| W["Return transactionBytes → walletExecutor"]
   Q -->|No| S["Submit via SDK (server)"]

@@ -22,6 +22,8 @@ The HCS-20 module provides a standard for creating and managing auditable points
 The HCS-20 standard is built on top of the Hedera Consensus Service (HCS) and provides a standardized way to handle point systems:
 
 ```mermaid
+accTitle: Architecture Overview
+accDescr: Diagram showing: Application; HCS20Client; BrowserHCS20Client; HCS20PointsIndexer; Hedera Consensus Service; HCS Topics; Points State; uses.
 graph TB
     subgraph "HCS-20 Architecture"
         App[Application]
@@ -131,6 +133,8 @@ _ = mintResult
 The first step is to deploy a new points system:
 
 ```mermaid
+accTitle: 1. Deploy Points
+accDescr: 1. Deploy Points diagram.
 sequenceDiagram
     participant App as Application
     participant Client as HCS20Client
@@ -171,6 +175,8 @@ console.log('Points deployed:', pointsInfo);
 After deployment, you can mint points to assign them to accounts:
 
 ```mermaid
+accTitle: 2. Mint Points
+accDescr: 2. Mint Points diagram.
 sequenceDiagram
     participant App as Application
     participant Client as HCS20Client
@@ -207,6 +213,8 @@ console.log('Mint transaction:', mintTransaction);
 Move points between accounts:
 
 ```mermaid
+accTitle: 3. Transfer Points
+accDescr: 3. Transfer Points diagram.
 sequenceDiagram
     participant App as Application
     participant Client as HCS20Client
@@ -243,6 +251,8 @@ console.log('Transfer transaction:', transferTransaction);
 Remove points from circulation:
 
 ```mermaid
+accTitle: 4. Burn Points
+accDescr: 4. Burn Points diagram.
 sequenceDiagram
     participant App as Application
     participant Client as HCS20Client
@@ -278,6 +288,8 @@ console.log('Burn transaction:', burnTransaction);
 The indexer maintains the state of all points by processing HCS topic messages:
 
 ```mermaid
+accTitle: 5. Using the Points Indexer
+accDescr: Diagram showing: Hedera Consensus Service; HCS20PointsIndexer; Deployed Points; Account Balances; Transaction History; Application; provides messages; maintains.
 graph TB
     subgraph "Indexer Architecture"
         HCS[Hedera Consensus Service] -->|provides messages| Indexer[HCS20PointsIndexer]
@@ -333,6 +345,8 @@ console.log('Balance for 0.0.98765:', balance);
 This diagram shows the complete lifecycle of points in the HCS-20 system:
 
 ```mermaid
+accTitle: Complete Implementation Flow
+accDescr: Complete Implementation Flow diagram.
 sequenceDiagram
     participant Creator as Points Creator
     participant User1 as User 1

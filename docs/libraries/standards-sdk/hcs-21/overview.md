@@ -19,6 +19,8 @@ The HCS-21 module in the Standards SDK publishes **adapter declarations** for ap
 - **Typed schemas** — `AdapterDeclaration`, `AdapterManifest`, `RegistryMetadataRecord`, and validation helpers keep payloads inside the 1 KB limit and aligned with the updated HCS-21 standard.
 
 ```mermaid
+accTitle: What’s Included
+accDescr: Diagram showing: Adapter Publisher; Standards SDK HCS-21; HCS21BrowserClient; HCS-1 Manifest Topic; HCS-2 Version Pointer Topic; HCS-21 Adapter Registry Topic; HCS-2 Registry-of-Registries; HCS-16 Flora.
 flowchart LR
     subgraph Off-chain
         Publisher[Adapter Publisher]

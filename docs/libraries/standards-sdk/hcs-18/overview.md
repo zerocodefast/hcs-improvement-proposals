@@ -24,6 +24,8 @@ HCS‑18 is the open discovery layer for Petal accounts. Petals announce themsel
 ## Architecture
 
 ```mermaid
+accTitle: Architecture
+accDescr: Diagram showing: HCS18BaseClient; tx.ts builders; HCS18Client; HCS‑16 / Flora manager; HCS18BrowserClient; Discovery Topic); announce/propose/respond/complete/withdraw; create Flora.
 graph TD
   subgraph Core
     B[HCS18BaseClient]

@@ -15,6 +15,8 @@ Overview
 
 Diagram
 ```mermaid
+accTitle: Your natural-language request flow
+accDescr: Diagram showing: Your natural-language request; Build + sign + execute; Build + return base64 bytes; You sign; You submit; Receipt/TxId; autonomous; returnBytes.
 flowchart TD
   A[Your natural-language request] --> B{operationalMode}
   B -->|autonomous| C[Build + sign + execute]

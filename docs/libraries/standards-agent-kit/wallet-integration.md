@@ -14,6 +14,8 @@ The InscriberBuilder uses a parallel delegate configuration for inscription flow
 ## Visual Primer
 
 ```mermaid
+accTitle: Visual Primer
+accDescr: Diagram showing: Builder (HCS-10/2/6); ByteBuildRegistry (construct base64 tx bytes); Wallet Executor (submit bytes); Hedera; Server Submit via SDK.
 flowchart LR
   B["Builder (HCS-10/2/6)"] --> R["ByteBuildRegistry
   (construct base64 tx bytes)"]

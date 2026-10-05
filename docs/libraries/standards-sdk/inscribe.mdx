@@ -25,6 +25,8 @@ The Inscribe module introduces several important concepts:
 The following diagram illustrates the complete inscription workflow from a developer implementation perspective:
 
 ```mermaid
+accTitle: Inscription Process
+accDescr: Diagram showing: Developer; Prepare Content; Call inscribe API; Pending; Processing; Completed; Failed; Get Topic ID.
 flowchart LR
     User([Developer]) --> PrepContent[Prepare Content]
     PrepContent --> CallAPI[Call inscribe API]

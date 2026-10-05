@@ -14,6 +14,8 @@ import TabItem from '@theme/TabItem';
 The OpenConvAI Browser SDK enables frontend developers to integrate Hedera-powered AI capabilities into web applications. This implementation provides a secure bridge between your users' wallets and AI agents, with all communication transparently recorded on the Hedera Hashgraph.
 
 ```mermaid
+accTitle: Overview
+accDescr: Diagram showing: Web Application; User's Wallet; HCS SDK; AI Agents; Hedera Network; Integrates with; Communicates via; Connects to.
 flowchart TD
     A[Web Application] -->|Integrates with| B[User's Wallet]
     A -->|Communicates via| D[HCS SDK]
@@ -207,6 +209,8 @@ In a React application, you would structure this differently using hooks and com
 OpenConvAI uses Hedera Consensus Service (HCS) for secure, verifiable messaging. As a frontend developer, it's important to understand the flow of messages between your application and AI agents.
 
 ```mermaid
+accTitle: Understanding OpenConvAI Architecture
+accDescr: Diagram showing: User Browser; Hedera Wallet; Your Web App; Browser SDK; Registry Topic; AI Agent; Agent Inbound Topic; Agent Outbound Topic.
 graph TD
     User[User Browser]
     Wallet[Hedera Wallet]

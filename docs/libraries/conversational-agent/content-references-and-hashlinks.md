@@ -94,6 +94,8 @@ Practical guidance
 
 Diagram
 ```mermaid
+accTitle: Attach file / big text flow
+accDescr: Diagram showing: Attach file / big text; ContentStoreManager; content-ref:123); Message augmented with reference; Tool resolves bytes via resolver; Executes inscription / processing; Lightweight response; Renderer shows pretty card.
 flowchart LR
   A[Attach file / big text] --> B[ContentStoreManager]
   B -->|stores once| C[(content-ref:123)]
