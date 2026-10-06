@@ -20,7 +20,7 @@ Hashinals are inscribed HTML applications that run entirely from data stored on 
 - WalletConnect project ID ([get one here](https://cloud.walletconnect.com/))
 - Basic HTML/JavaScript knowledge
 
-For more details, see the [installation guide](installation) and [recursion guide](../recursion-sdk/usage).
+For more details, see the [installation guide](/docs/libraries/hashinal-wc/installation) and [recursion guide](/docs/libraries/recursion-sdk/usage).
 
 ## Create index.html
 
@@ -154,8 +154,8 @@ For more details, see the [installation guide](installation) and [recursion guid
 
 ## Next Steps
 
-- Explore [API Methods](methods) for more SDK capabilities
-- Learn about [HCS Topics](topics) for message handling
-- Check out the [HCS-3 standard](../../standards/hcs-3) for advanced recursion features
+- Explore [API Methods](/docs/libraries/hashinal-wc/methods) for more SDK capabilities
+- Learn about [HCS Topics](/docs/libraries/hashinal-wc/topics) for message handling
+- Check out the [HCS-3 standard](https://hol.org/docs/standards/hcs-3) for advanced recursion features
 
 > **Important**: Remember to replace `YOUR_PROJECT_ID` with your actual WalletConnect project ID!

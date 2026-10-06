@@ -14,9 +14,7 @@ This chapter walks you through building your own plugin. You’ll learn the life
 2. [Creating a Basic Plugin](#creating-a-basic-plugin)
 3. [Tool Development](#tool-development)
 4. [State Management](#state-management)
-5. [Testing Your Plugin](#testing-your-plugin)
-6. [Real-World Examples](#real-world-examples)
-7. [Best Practices](#best-practices)
+5. [Real-World Examples](#real-world-examples)
 
 ## Plugin Architecture
 

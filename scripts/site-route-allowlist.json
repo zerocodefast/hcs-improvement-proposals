@@ -1,0 +1,29 @@
+{
+  "comment": "Root-relative routes owned by the hol.org portal (points-portal), not this docs build. The docs blog and pages legitimately link to them as site navigation; the generated-site gate validates them as LIVE portal routes rather than docs routes. Verify entries against the live site before adding.",
+  "verifiedAt": "2026-10-06",
+  "verifiedBy": "curl status < 500 against https://hol.org",
+  "routes": [
+    "/",
+    "/use-cases/",
+    "/hackathon/",
+    "/hackathon",
+    "/mcp/",
+    "/mcp",
+    "/patchwork/",
+    "/patchwork",
+    "/patchwork-speaker/",
+    "/patchwork-speaker",
+    "/patchwork-sessions-intake/",
+    "/patchwork-sessions-intake",
+    "/standards/",
+    "/plugins/",
+    "/sponsor/",
+    "/partner-program/",
+    "/privacy/",
+    "/terms/",
+    "/guard",
+    "/guard/",
+    "/points",
+    "/points/"
+  ]
+}

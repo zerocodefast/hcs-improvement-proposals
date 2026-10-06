@@ -142,4 +142,4 @@ pnpm tsx update-agent.ts
 - Endpoint and protocol fields.
 - Additional registries and metadata payload.
 
-For full payload shape and advanced options, see [Registry Broker Client API](/docs/registry-broker/api/client#updateagent).
+For full payload shape and advanced options, see [Registry Broker Client API](/docs/registry-broker/api/client#updating-a-registration).

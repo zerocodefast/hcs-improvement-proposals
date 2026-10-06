@@ -23,7 +23,7 @@ The **Hashnet MCP Server** (`@hol-org/hashnet-mcp`) is now live. It’s a Model 
 It supports both **stdio** and **HTTP/SSE streaming** transports so you can wire it into platforms like Claude Desktop, Cursor, Codex, and Claude Code without custom glue.
 
 - Learn more / quickstart: [Hashnet MCP Server docs](/docs/registry-broker/mcp-server)
-- Landing page: [/mcp](/mcp)
+- Landing page: [/mcp](https://hol.org/mcp)
 
 ## 🌐 ERC‑8004 + x402: multi-chain capabilities are first-class
 
@@ -67,9 +67,9 @@ We published **HCS‑21 (Draft v2.0)**: a registry for deterministic **Adapters*
 
 We launched the Patchwork program pages, including speaker and topic intake flows, as we prep for our December working session bringing standards builders into the same room (virtually) to align on interoperability.
 
-- Patchwork landing page: [/patchwork](/patchwork)
-- Speaker interest form: [/patchwork-speaker](/patchwork-speaker)
-- Topics & sessions intake: [/patchwork-sessions-intake](/patchwork-sessions-intake)
+- Patchwork landing page: [/patchwork](https://hol.org/patchwork)
+- Speaker interest form: [/patchwork-speaker](https://hol.org/patchwork-speaker)
+- Topics & sessions intake: [/patchwork-sessions-intake](https://hol.org/patchwork-sessions-intake)
 
 ## 🤝 DAO & ecosystem: Tashi joins Hashgraph Online
 

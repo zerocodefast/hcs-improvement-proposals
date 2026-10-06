@@ -292,9 +292,9 @@ Now that you understand HCS basics, continue with:
 
 ➡ [Inscribe Your First File](../inscriptions/inscribe-your-first-file.md) - Store files using HCS
 
-➡ [HCS-1 Standard](../../standards/hcs-1.md) - Large file storage specification
+➡ [HCS-1 Standard](https://hol.org/docs/standards/hcs-1.md) - Large file storage specification
 
-➡ [HCS-2 Standard](../../standards/hcs-2.md) - Create topic registries
+➡ [HCS-2 Standard](https://hol.org/docs/standards/hcs-2.md) - Create topic registries
 
 ***
 
@@ -359,6 +359,6 @@ import { DocsLink, ExternalLink } from '@site/src/components/MDXComponents';
 
 - [HCS Documentation](https://docs.hedera.com/guides/docs/sdks/consensus) - Official Hedera documentation
 - [Topic Explorer](https://hashscan.io/testnet) - View topics on HashScan
-- [HCS Standards](../../standards) - All HCS specifications
+- [HCS Standards](https://hol.org/standards) - All HCS specifications
 
 

@@ -197,10 +197,10 @@ The SDK supports all Hedera networks:
 
 ## Next Steps
 
-- [Installation Guide](installation) - Set up the SDK for your project
-- [API Methods](methods) - Complete method documentation
-- [React Integration](usage-with-react) - Build React apps with wallet connectivity
-- [Next.js Integration](usage-with-nextjs) - Server-side rendering with wallets
-- [Vite Integration](usage-with-vite) - Fast development with Vite
-- [Hashinals Guide](usage-with-recursion) - Build inscribed HTML applications
-- [HCS Topics](topics) - Work with Hedera Consensus Service
+- [Installation Guide](/docs/libraries/hashinal-wc/installation) - Set up the SDK for your project
+- [API Methods](/docs/libraries/hashinal-wc/methods) - Complete method documentation
+- [React Integration](/docs/libraries/hashinal-wc/usage-with-react) - Build React apps with wallet connectivity
+- [Next.js Integration](/docs/libraries/hashinal-wc/usage-with-nextjs) - Server-side rendering with wallets
+- [Vite Integration](/docs/libraries/hashinal-wc/usage-with-vite) - Fast development with Vite
+- [Hashinals Guide](/docs/libraries/hashinal-wc/usage-with-recursion) - Build inscribed HTML applications
+- [HCS Topics](/docs/libraries/hashinal-wc/topics) - Work with Hedera Consensus Service

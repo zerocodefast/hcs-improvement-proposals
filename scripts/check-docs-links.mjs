@@ -73,10 +73,13 @@ for (const file of walkMarkdown(DOCS_ROOT)) {
     // are Docusaurus doc-slug links — accept file.md / file.mdx /
     // dir/index.{md,mdx} resolutions.
     const target = path.normalize(path.join(path.dirname(file), href));
+    const isDirForm = target.endsWith('/');
     const candidates = /\.(md|mdx)$/.test(target)
       ? [target]
-      : [target, `${target}.md`, `${target}.mdx`,
-         path.join(target, 'index.md'), path.join(target, 'index.mdx')];
+      : isDirForm
+        ? [target, path.join(target, 'index.md'), path.join(target, 'index.mdx')]
+        : [target, `${target}.md`, `${target}.mdx`,
+           path.join(target, 'index.md'), path.join(target, 'index.mdx')];
     const resolved = candidates.find((c) => existsSync(c));
     if (resolved) {
       // Fragment target must match a generated heading anchor or explicit id
@@ -114,7 +117,20 @@ for (const file of walkMarkdown(DOCS_ROOT)) {
         ? [sameDir]
         : [sameDir, `${sameDir}.md`, `${sameDir}.mdx`,
            path.join(sameDir, 'index.md'), path.join(sameDir, 'index.mdx')];
-      if (sameDirCandidates.some((c) => existsSync(c))) {
+      // The stripped form must resolve to a DIFFERENT normalized directory
+      // than the original resolution; `./../x` and `../x` normalize alike,
+      // so a two-level link must never misfire on a one-level strip.
+      const originalResolved = path.normalize(path.join(path.dirname(file), href));
+      const strippedResolved = path.normalize(sameDir);
+      const originalCandidates = /\.(md|mdx)$/.test(originalResolved)
+        ? [originalResolved]
+        : [originalResolved, `${originalResolved}.md`, `${originalResolved}.mdx`,
+           path.join(originalResolved, 'index.md'), path.join(originalResolved, 'index.mdx')];
+      const originalExists = originalCandidates.some((c) => existsSync(c));
+      if (
+        sameDirCandidates.some((c) => existsSync(c)) &&
+        !originalExists
+      ) {
         report('wrong-parent-relative', file, `${href} (exists as ./${stripped})`);
         continue;
       }

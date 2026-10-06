@@ -16,13 +16,13 @@ Let's dive in.
 
 ## What's Inside
 
-- [🤖 Neuron Joins the DAO: A Leap Forward for AI and Machine Commerce](#neuron-joins-the-dao-a-leap-forward-for-ai-and-machine-commerce)
-- [🏆 Hedera Africa Hackathon: AI Track Now Live](#hedera-africa-hackathon-ai-track-now-live)
-- [🎙️ Hedera x AI Spaces Are Back](#hedera-x-ai-spaces-are-back)
-- [🎁 HashPack Sponsors Live Giveaway Series](#hashpack-sponsors-live-giveaway-series)
-- [🚀 Moonscape Points & OpenConvAI Portal Go Live on Mainnet](#moonscape-points--openconvai-portal-go-live-on-mainnet)
-- [📊 Metrics & Milestones](#metrics--milestones)
-- [🔮 What's Coming This Month](#whats-coming-this-month)
+- [🤖 Neuron Joins the DAO: A Leap Forward for AI and Machine Commerce](/blog/july-2025-monthly-recap#neuron-joins-the-dao-a-leap-forward-for-ai-and-machine-commerce)
+- [🏆 Hedera Africa Hackathon: AI Track Now Live](/blog/july-2025-monthly-recap#hedera-africa-hackathon-ai-track-now-live)
+- [🎙️ Hedera x AI Spaces Are Back](/blog/july-2025-monthly-recap#hedera-x-ai-spaces-are-back)
+- [🎁 HashPack Sponsors Live Giveaway Series](/blog/july-2025-monthly-recap#hashpack-sponsors-live-giveaway-series)
+- [🚀 Moonscape Points & OpenConvAI Portal Go Live on Mainnet](/blog/july-2025-monthly-recap#moonscape-points--openconvai-portal-go-live-on-mainnet)
+- [📊 Metrics & Milestones](/blog/july-2025-monthly-recap#metrics--milestones)
+- [🔮 What's Coming This Month](/blog/july-2025-monthly-recap#whats-coming-this-month)
 
 ## Neuron Joins the DAO: A Leap Forward for AI and Machine Commerce
 
@@ -41,7 +41,7 @@ We're proud sponsors of the **AI Track** at the 2025 Hedera Africa Hackathon, th
 - **Dates:** August 1 – September 30
 - **Track Focus:** Building AI-powered apps using Hedera and Hashgraph Online's OpenConvAI standard
 - **Required:** On-chain deployment via Hedera Testnet or Mainnet
-- **Learn More & Register:** [AI Track Details](/hackathon)
+- **Learn More & Register:** [AI Track Details](https://hol.org/hackathon)
 
 ### Tools for Builders
 

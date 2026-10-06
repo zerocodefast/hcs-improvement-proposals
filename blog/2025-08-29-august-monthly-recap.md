@@ -10,9 +10,9 @@ date: 2025-09-01
 ## TL;DR
 
 August was a big month for Hashgraph Online.
-1. We launched the [Developer Preview of HOL Desktop](#1-hol-desktop-developer-preview-is-live), giving builders a first look at our agent-based desktop environment.
-2. We released the draft of [HCS-19, a new standard for AI Agent Privacy Compliance](#2-hcs-19-draft-ai-agent-privacy-compliance).
-3. We announced [HCS-14, an upcoming Agent ID Standard](#3-hcs-14-agent-id-standard-coming-soon) that enables globally verifiable agent identities using the W3C DID framework.
+1. We launched the [Developer Preview of HOL Desktop](/blog/august-monthly-recap#1-hol-desktop-developer-preview-is-live), giving builders a first look at our agent-based desktop environment.
+2. We released the draft of [HCS-19, a new standard for AI Agent Privacy Compliance](/blog/august-monthly-recap#2-hcs-19-draft-ai-agent-privacy-compliance).
+3. We announced [HCS-14, an upcoming Agent ID Standard](/blog/august-monthly-recap#3-hcs-14-agent-id-standard-coming-soon) that enables globally verifiable agent identities using the W3C DID framework.
 
 <!--truncate-->
 

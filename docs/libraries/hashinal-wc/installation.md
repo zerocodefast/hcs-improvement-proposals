@@ -46,7 +46,7 @@ For inscribed HTML Hashinals, the SDK is loaded directly from Hedera Consensus S
 
 #### 1. Create Your Hashinal
 
-First, create your inscribed HTML file following the [HCS-3 Recursion Standard](../recursion-sdk/what-is-recursion.md).
+First, create your inscribed HTML file following the [HCS-3 Recursion Standard](/docs/libraries/recursion-sdk/what-is-recursion).
 
 #### 2. Include the SDK
 
@@ -82,7 +82,7 @@ Add the following script tag to your HTML file:
 | v1.0.89 | `0.0.7812387` | Stable | Core features + smart contracts |
 | v1.0.82 | `0.0.7522981` | Legacy | Basic wallet operations |
 
-📍 **Note**: Always check the [Topics](topics) page for the latest version.
+📍 **Note**: Always check the [Topics](/docs/libraries/hashinal-wc/topics) page for the latest version.
 
 ### Benefits
 
@@ -146,10 +146,10 @@ The SDK is compatible with:
 
 | Framework | Version | Guide |
 |-----------|---------|-------|
-| **React** | ≥ 17.0 | [React Guide](usage-with-react) |
-| **Next.js** | ≥ 12.0 | [Next.js Guide](usage-with-nextjs) |
+| **React** | ≥ 17.0 | [React Guide](/docs/libraries/hashinal-wc/usage-with-react) |
+| **Next.js** | ≥ 12.0 | [Next.js Guide](/docs/libraries/hashinal-wc/usage-with-nextjs) |
 | **Vue** | ≥ 3.0 | Coming Soon |
-| **Vite** | ≥ 4.0 | [Vite Guide](usage-with-vite) |
+| **Vite** | ≥ 4.0 | [Vite Guide](/docs/libraries/hashinal-wc/usage-with-vite) |
 | **Vanilla JS** | ES6+ | See examples below |
 
 ### Installation Commands
@@ -285,11 +285,11 @@ REACT_APP_WALLETCONNECT_PROJECT_ID=your_project_id_here
 
 Now that you have the SDK installed, explore:
 
-- 📖 [API Reference](methods) - Complete method documentation
-- ⚛️ [React Integration](usage-with-react) - React-specific patterns
-- 🌐 [Next.js Integration](usage-with-nextjs) - Server-side considerations
-- ⚡ [Vite Integration](usage-with-vite) - Vite configuration
-- 🎨 [Hashinals Guide](usage-with-recursion) - Building inscribed applications
+- 📖 [API Reference](/docs/libraries/hashinal-wc/methods) - Complete method documentation
+- ⚛️ [React Integration](/docs/libraries/hashinal-wc/usage-with-react) - React-specific patterns
+- 🌐 [Next.js Integration](/docs/libraries/hashinal-wc/usage-with-nextjs) - Server-side considerations
+- ⚡ [Vite Integration](/docs/libraries/hashinal-wc/usage-with-vite) - Vite configuration
+- 🎨 [Hashinals Guide](/docs/libraries/hashinal-wc/usage-with-recursion) - Building inscribed applications
 
 ## Additional Resources
 

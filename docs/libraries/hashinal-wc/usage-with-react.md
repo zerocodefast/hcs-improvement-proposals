@@ -353,7 +353,7 @@ The SDK includes full TypeScript definitions for better development experience.
 
 ## Next Steps
 
-- Explore [API Methods](methods) for all available SDK functions
-- Learn about [HCS Topics](topics) for advanced messaging
-- Check out [Next.js Integration](usage-with-nextjs) for SSR support
-- Review the [Hashinals Guide](usage-with-recursion) for on-chain apps
+- Explore [API Methods](/docs/libraries/hashinal-wc/methods) for all available SDK functions
+- Learn about [HCS Topics](/docs/libraries/hashinal-wc/topics) for advanced messaging
+- Check out [Next.js Integration](/docs/libraries/hashinal-wc/usage-with-nextjs) for SSR support
+- Review the [Hashinals Guide](/docs/libraries/hashinal-wc/usage-with-recursion) for on-chain apps

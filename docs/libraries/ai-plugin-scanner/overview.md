@@ -49,29 +49,29 @@ Supported harnesses today:
 
 Start with these Guard guides:
 
-- [Guard get started](./guard/get-started.md)
-- [Local-first runtime and approvals](./guard/local-first-and-approvals.md)
-- [Local-first and optional cloud](./guard/local-first-vs-cloud.md)
-- [Approval center and audit trail](./guard/approval-center-and-audit.md)
-- [Guard architecture](./guard/architecture.md)
-- [Harness support matrix](./guard/harness-support.md)
-- [Codex harness](./guard/codex-harness.md)
-- [Claude Code harness](./guard/claude-code-harness.md)
-- [Cursor harness](./guard/cursor-harness.md)
-- [Gemini harness](./guard/gemini-harness.md)
-- [OpenCode harness](./guard/opencode-harness.md)
-- [Testing and validation](./guard/testing-and-validation.md)
+- [Guard get started](/docs/libraries/ai-plugin-scanner/guard/get-started)
+- [Local-first runtime and approvals](/docs/libraries/ai-plugin-scanner/guard/local-first-and-approvals)
+- [Local-first and optional cloud](/docs/libraries/ai-plugin-scanner/guard/local-first-vs-cloud)
+- [Approval center and audit trail](/docs/libraries/ai-plugin-scanner/guard/approval-center-and-audit)
+- [Guard architecture](/docs/libraries/ai-plugin-scanner/guard/architecture)
+- [Harness support matrix](/docs/libraries/ai-plugin-scanner/guard/harness-support)
+- [Codex harness](/docs/libraries/ai-plugin-scanner/guard/codex-harness)
+- [Claude Code harness](/docs/libraries/ai-plugin-scanner/guard/claude-code-harness)
+- [Cursor harness](/docs/libraries/ai-plugin-scanner/guard/cursor-harness)
+- [Gemini harness](/docs/libraries/ai-plugin-scanner/guard/gemini-harness)
+- [OpenCode harness](/docs/libraries/ai-plugin-scanner/guard/opencode-harness)
+- [Testing and validation](/docs/libraries/ai-plugin-scanner/guard/testing-and-validation)
 
 When local Guard is already working and you want the signed-in operating model:
 
-- [Guard Cloud command center](./guard/guard-cloud-command-center.md)
-- [Devices and shared trust memory](./guard/devices-and-shared-trust.md)
-- [Inventory, ABOM, and artifact detail](./guard/inventory-abom-and-artifact-detail.md)
-- [Receipts, changes, and history](./guard/receipts-changes-and-history.md)
-- [Alerts, watchlists, and advisories](./guard/alerts-watchlists-and-advisories.md)
-- [Team policy and delegated approvals](./guard/team-policy-and-delegated-approvals.md)
-- [Exceptions and expiring windows](./guard/exceptions-and-expiring-windows.md)
-- [Billing, credits, and plans](./guard/billing-credits-and-plans.md)
+- [Guard Cloud command center](/docs/libraries/ai-plugin-scanner/guard/guard-cloud-command-center)
+- [Devices and shared trust memory](/docs/libraries/ai-plugin-scanner/guard/devices-and-shared-trust)
+- [Inventory, ABOM, and artifact detail](/docs/libraries/ai-plugin-scanner/guard/inventory-abom-and-artifact-detail)
+- [Receipts, changes, and history](/docs/libraries/ai-plugin-scanner/guard/receipts-changes-and-history)
+- [Alerts, watchlists, and advisories](/docs/libraries/ai-plugin-scanner/guard/alerts-watchlists-and-advisories)
+- [Team policy and delegated approvals](/docs/libraries/ai-plugin-scanner/guard/team-policy-and-delegated-approvals)
+- [Exceptions and expiring windows](/docs/libraries/ai-plugin-scanner/guard/exceptions-and-expiring-windows)
+- [Billing, credits, and plans](/docs/libraries/ai-plugin-scanner/guard/billing-credits-and-plans)
 
 ## plugin-scanner
 
@@ -125,12 +125,12 @@ It supports policy profiles (`default`, `public-marketplace`, `strict-security`)
 
 Start with these scanner guides:
 
-- [Scanner quick start](./plugin-scanner/quick-start.md)
-- [Ecosystems and repository mode](./plugin-scanner/ecosystems-and-repo-mode.md)
-- [Quality suite commands](./plugin-scanner/quality-suite-commands.md)
-- [Policies, output, and trust provenance](./plugin-scanner/policies-and-output.md)
-- [Trust provenance guide](./plugin-scanner/trust-provenance.md)
-- [Report formats and CI automation](./plugin-scanner/report-formats-and-ci.md)
+- [Scanner quick start](https://github.com/hashgraph-online/ai-plugin-scanner/blob/main/README.md)
+- [Ecosystems and repository mode](https://github.com/hashgraph-online/ai-plugin-scanner/blob/main/README.md)
+- [Quality suite commands](https://github.com/hashgraph-online/ai-plugin-scanner/blob/main/README.md)
+- [Policies, output, and trust provenance](https://github.com/hashgraph-online/ai-plugin-scanner/blob/main/README.md)
+- [Trust provenance guide](https://github.com/hashgraph-online/ai-plugin-scanner/blob/main/README.md)
+- [Report formats and CI automation](https://github.com/hashgraph-online/ai-plugin-scanner/blob/main/README.md)
 
 ## GitHub Action
 
@@ -138,8 +138,8 @@ The Marketplace wrapper lives in the dedicated [`hashgraph-online/ai-plugin-scan
 
 Start with these action guides:
 
-- [GitHub Action quality gate](./plugin-scanner/github-action.md)
-- [Submission and registry payloads](./plugin-scanner/submission-and-registry-payloads.md)
+- [GitHub Action quality gate](https://github.com/hashgraph-online/ai-plugin-scanner/blob/main/README.md)
+- [Submission and registry payloads](https://github.com/hashgraph-online/ai-plugin-scanner/blob/main/README.md)
 
 ## Trust Score Provenance
 
@@ -151,7 +151,7 @@ The scanner emits explicit trust provenance alongside quality grades:
 
 Start with the local trust guide:
 
-- [Trust provenance guide](./plugin-scanner/trust-provenance.md)
+- [Trust provenance guide](https://github.com/hashgraph-online/ai-plugin-scanner/blob/main/README.md)
 
 ## Config File
 
@@ -198,4 +198,4 @@ docker run --rm \
 | License | Apache-2.0 |
 | Latest Release | See the [GitHub releases](https://github.com/hashgraph-online/ai-plugin-scanner/releases) and linked package distributions |
 | Supported Products | `hol-guard`, `plugin-scanner`, and the `ai-plugin-scanner-action` GitHub Action |
-| Security Policy | [SECURITY.md](https://github.com/hashgraph-online/ai-plugin-scanner/blob/main/SECURITY.md) |
+| Security Policy | [SECURITY.md](https://github.com/hashgraph-online/ai-plugin-scanner/blob/main/SECURITY) |

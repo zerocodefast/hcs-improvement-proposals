@@ -61,7 +61,7 @@ Today, we're proud to announce our founding members:
 
 ## The Foundation: Hedera Consensus Service
 
-At the core of our initiative is the Hedera Consensus Service (HCS). Its speed, fairness, and security provide a robust foundation for our standards, which have already facilitated millions of transactions. We've already proven that HCS is a viable and secure foundation for a decentralized internet, in fact a number of [use cases](/use-cases) found on our website are already live.
+At the core of our initiative is the Hedera Consensus Service (HCS). Its speed, fairness, and security provide a robust foundation for our standards, which have already facilitated millions of transactions. We've already proven that HCS is a viable and secure foundation for a decentralized internet, in fact a number of [use cases](https://hol.org/use-cases) found on our website are already live.
 
 ## Looking Ahead
 
@@ -75,7 +75,7 @@ This launch is just the beginning. We will:
 
 ## Join Our Effort
 
-We welcome organizations, developers, and enthusiasts who share our vision for a fully on-chain internet. If you're interested in contributing or learning more, please visit our [website](/) and sign up for our newsletter or dive into our Standards and Use Cases. We look forward to working with developers, enthusiasts, and organizations to build the future of the internet together.
+We welcome organizations, developers, and enthusiasts who share our vision for a fully on-chain internet. If you're interested in contributing or learning more, please visit our [website](https://hol.org/) and sign up for our newsletter or dive into our Standards and Use Cases. We look forward to working with developers, enthusiasts, and organizations to build the future of the internet together.
 
 Thank you for your support as we embark on this exciting journey to reshape the internet.
 

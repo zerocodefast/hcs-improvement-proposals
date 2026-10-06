@@ -556,6 +556,79 @@ function copyRecursive(srcDir, destDir, stats = { copied: 0, skipped: 0 }) {
           escapedContent = fixHcs27(escapedContent);
         }
         escapedContent = fixWrongParentRelativeLinks(destPath, escapedContent);
+        // V8-08: hcs-4's own License heading gets a unique id so sample
+        // template License headings can never collide with it.
+        if (destPath.endsWith('hcs-4.md')) {
+          escapedContent = escapedContent.replace('## License {#license}', '## License {#hcs-4-license}');
+        }
+        // V8-08: the upstream "Table of Contents" lists the document H1; the
+        // built page hoists that H1 into the title header without an id, so
+        // the TOC's first entry dangles. Add an explicit anchor to the H1.
+        {
+          const h1Match = escapedContent.match(/^# (.+)$/m);
+          if (h1Match) {
+            const anchor = h1Match[1].toLowerCase().trim().replace(/[^a-z0-9\s-]/g, '').replace(/\s+/g, '-');
+            const line = escapedContent.split('\n').find((l) => /^# /.test(l));
+            if (line && !line.includes('{#')) {
+              // Demote to H2: the page header hoists the front-matter title
+              // (id-less), so the authored heading must stay in-body with an
+              // explicit anchor for the authored TOC to resolve.
+              escapedContent = escapedContent.replace(
+                line,
+                '## ' + h1Match[1] + ` {#${anchor}}`,
+              );
+            }
+          }
+          // Pin explicit anchors on ALL remaining headings so every authored
+          // TOC link resolves regardless of Docusaurus slug variations
+          // (colons, ampersands, and slashes slug differently across
+          // versions). Idempotent: lines already carrying {#} are skipped.
+          const seenIds = new Map();
+          escapedContent = escapedContent
+            .split('\n')
+            .map((l) => {
+              const hm = l.match(/^(#{1,6})\s+(.+?)\s*$/);
+              if (!hm || l.includes('{#')) return l;
+              let a = hm[2]
+                .toLowerCase()
+                .replace(/[^a-z0-9\s-]/g, '')
+                .trim()
+                .replace(/\s+/g, '-');
+              const n = (seenIds.get(a) ?? 0) + 1;
+              seenIds.set(a, n);
+              if (n > 1) a = `${a}-${n - 1}`;
+              return `${hm[1]} ${hm[2]} {#${a}}`;
+            })
+            .join('\n');
+          // Drop authored TOC links whose fragment has no matching pinned id
+          // (upstream TOCs drift from renamed/removed sections). A dangling
+          // anchor is a real navigation failure on the built page.
+          const allIds = new Set(
+            [...escapedContent.matchAll(/\{#([a-z0-9\-]+)\}/g)].map((m) => m[1]),
+          );
+          escapedContent = escapedContent.replace(
+            /\[([^\]]+)\]\(#([a-z0-9\-]+)\)/g,
+            (m, text, frag) => (allIds.has(frag) ? m : text),
+          );
+        }
+        // V8-08: hcs-4 embeds two sample templates whose "License" headings
+        // duplicate the document's own; authored TOC links to #license would
+        // race the dedupe suffixes. Point every authored #license TOC link
+        // at the document's unique outer anchor id.
+        if (destPath.endsWith('hcs-4.md')) {
+          escapedContent = escapedContent
+            .split('\n')
+            .map((l) => (l.includes('](#license)') && !l.startsWith('#')
+              ? l.replace('](#license)', '](https://hol.org/docs/standards/hcs-4/#hcs-4-license)')
+              : l))
+            .join('\n');
+        }
+        // V8-08: overview.md's route collides with the specification/
+        // directory, so its ./base-schema link resolves one level too deep
+        // at runtime. Absolutize to the emitted route (idempotent).
+        if (destPath.endsWith('hcs-9/specification/overview.md')) {
+          escapedContent = escapedContent.replace('](./base-schema)', '](/docs/standards/hcs-9/specification/base-schema)');
+        }
 
         fs.writeFileSync(destPath, escapedContent, 'utf8');
       } else {

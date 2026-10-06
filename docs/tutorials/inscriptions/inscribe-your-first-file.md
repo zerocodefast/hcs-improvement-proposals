@@ -450,7 +450,7 @@ async function batchInscribe(files) {
 ## Next Steps
 
 - [Create NFT with Inscriptions](./create-nft-with-inscriptions.md) - Use inscriptions for NFT metadata
-- [HCS-5 Hashinals](../../standards/hcs-5.md) - Learn about the inscription standard
+- [HCS-5 Hashinals](https://hol.org/docs/standards/hcs-5.md) - Learn about the inscription standard
 
 ## Troubleshooting
 
@@ -518,7 +518,7 @@ async function batchInscribe(files) {
 
 ## Resources
 
-- [HCS-1 Standard](../../standards/hcs-1.md)
+- [HCS-1 Standard](https://hol.org/docs/standards/hcs-1.md)
 - [Standards SDK Documentation](https://github.com/hashgraph-online/standards-sdk)
 - [Inscription Explorer](https://hashscan.io/testnet)
 
